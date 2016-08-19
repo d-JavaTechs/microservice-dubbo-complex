@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pn.eric.microservice.api.CustomerService;
 
 /**
- * Created by lenovo on 2015/5/11.
+ * Created by Eric
  */
 @Controller
 public class RestController {
 
     @Autowired
-    private CustomerService helloService ;
+    private CustomerService customerService ;
 
     @ResponseBody
     @RequestMapping("/say")
     public String index(){
-        return helloService.getAll() ;
+        return customerService.getAll() ;
     }
 }
